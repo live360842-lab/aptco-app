@@ -1,0 +1,12 @@
+{
+  "appId": "com.aptco.cashclose",
+  "appName": "نظام إقفال الصناديق",
+  "webDir": "www",
+  "server": {
+    "url": "https://aptco.netlify.app/?app=android",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

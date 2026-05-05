@@ -1,0 +1,16 @@
+{
+  "name": "aptco-cashclose",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "npx cap open android",
+    "sync": "npx cap sync android",
+    "build-apk": "npx cap sync android && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/cli": "latest",
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {}
+}
