@@ -1,0 +1,6 @@
+{
+  "appId": "com.aptco.app",
+  "appName": "APTCO",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
