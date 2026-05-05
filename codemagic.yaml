@@ -1,0 +1,28 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    max_build_duration: 60
+
+    environment:
+      node: latest
+
+    scripts:
+      - npm install
+      - npm install @capacitor/core @capacitor/android @capacitor/cli
+
+      # إنشاء المشروع
+      - npx cap init "APTCO" "com.aptco.app" --web-dir=www || true
+
+      # إضافة أندرويد
+      - npx cap add android
+
+      # مزامنة
+      - npx cap sync android
+
+      # بناء
+      - cd android
+      - chmod +x gradlew
+      - ./gradlew assembleDebug
+
+    artifacts:
+      - android/app/build/outputs/**/*.apk
